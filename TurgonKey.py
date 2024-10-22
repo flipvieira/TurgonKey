@@ -3,6 +3,7 @@
 import string
 import secrets
 import datetime
+import os
 
 is_running = True #Boolean to control the running loop.
 
@@ -51,7 +52,7 @@ def run_soft(): #Main function that controls the flow of other functions, includ
 
             comm = input('\nInsert command: ').split() #Creates a list from the command inserted by user, makes it easier to control the flow of the code.
 
-            if (comm[0] in ['exit', 'help']) or (comm[0] == 'generatre' and isinstance(int(comm[1]), int) and comm[2] in ['a', 'u', 'l'] and comm[3] in ['usenums', 'pass'] and comm[4] in ['usespcs', 'pass']):
+            if (comm[0] in ['exit', 'help']) or (comm[0] == 'generate' and isinstance(int(comm[1]), int) and comm[2] in ['a', 'u', 'l'] and comm[3] in ['usenums', 'pass'] and comm[4] in ['usespcs', 'pass']):
                 break
 
             else:
