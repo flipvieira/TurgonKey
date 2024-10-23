@@ -44,7 +44,7 @@ def get_help():
 def run_soft(): #Main function that controls the flow of other functions, including the one that generates the password. Makes the code more organized.
 
     print('Welcome to PassGen 1.0, a simple and secure password generator.')
-    print('The basic synthax is: \'generate [size] [cap] [nums] [spcs]\'')
+    print('The basic synthax is: \'generate [size] [case options] [digit options] [special characters options]\'')
 
     while True: #Loop to prevent crashes due to wrong command lines.
 
@@ -89,7 +89,7 @@ def run_soft(): #Main function that controls the flow of other functions, includ
         with open('pass_gen_entries.txt', 'a') as pge:
             pge.write(f'{password} ({datetime.datetime.now()})\n') #Writes the password in a text file for future uses, along with date and time when it was generated.
 
-        print(f'\nPassword generated: \'{password}\'. Access it at /PassGen1.0/pass_gen_entries.txt.\n')
+        print(f'\nPassword generated: \'{password}\'. Access it at /TurgonKey/pass_gen_entries.txt.\n')
 
 while is_running: #Running loop controlled by boolean is_running.
     run_soft()
