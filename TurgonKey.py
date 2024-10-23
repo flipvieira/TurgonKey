@@ -3,7 +3,6 @@
 import string
 import secrets
 import datetime
-import os
 
 is_running = True #Boolean to control the running loop.
 
